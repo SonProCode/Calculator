@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        android:gravity="center|end"
+        android:text="0"
+        android:textSize="60sp"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!-- Dong 1 -->
+    <Button
+        android:id="@+id/CE"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="CE"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/res"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/cbut"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="C"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/res"
+        app:layout_constraintStart_toEndOf="@+id/CE"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/BS"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="BS"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/res"
+        app:layout_constraintStart_toEndOf="@+id/cbut"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/div"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#dedede"
+        app:backgroundTint="@null"
+        android:text="/"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/res"
+        app:layout_constraintStart_toEndOf="@+id/BS"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <!-- Dong 2 -->
+    <Button
+        android:id="@+id/but7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="7"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/CE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="8"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/cbut"
+        app:layout_constraintStart_toEndOf="@+id/but7"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#efefef"
+        app:backgroundTint="@null"
+        android:text="9"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/BS"
+        app:layout_constraintStart_toEndOf="@+id/but8"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/mul"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="x"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/div"
+        app:layout_constraintStart_toEndOf="@+id/but9"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <!-- Dong 3 -->
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="4"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="5"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but8"
+        app:layout_constraintStart_toEndOf="@+id/but4"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="6"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but9"
+        app:layout_constraintStart_toEndOf="@+id/but5"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/min"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="-"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/mul"
+        app:layout_constraintStart_toEndOf="@+id/but6"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <!-- Dong 4 -->
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="1"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="2"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but5"
+        app:layout_constraintStart_toEndOf="@+id/but1"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="3"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but6"
+        app:layout_constraintStart_toEndOf="@+id/but2"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="+"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/min"
+        app:layout_constraintStart_toEndOf="@+id/but3"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <!-- dong 5 -->
+    <Button
+        android:id="@+id/addMin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="+/-"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/but0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#EFEFEF"
+        app:backgroundTint="@null"
+        android:text="0"
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but2"
+        app:layout_constraintStart_toEndOf="@+id/addMin"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="."
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/but3"
+        app:layout_constraintStart_toEndOf="@+id/but0"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+    <Button
+        android:id="@+id/equal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#E1E1E1"
+        app:backgroundTint="@null"
+        android:text="="
+        android:layout_margin="4dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/add"
+        app:layout_constraintStart_toEndOf="@+id/dot"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintWidth_percent="0.235" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
